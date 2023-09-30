@@ -8,6 +8,6 @@ const productSchema = new mongoose.Schema({
     price:{type:String},
 })
 
-const productModel = mongoose.model('ProductImages',productSchema);
+const productModel = mongoose.model('Product',productSchema);
 
 module.exports = productModel;

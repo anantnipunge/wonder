@@ -4,14 +4,14 @@ const imagesModel = require('../Models/productImages');
 
 const uploadProduct = async (req, res) => {
     try {
-        const { title, description, imagePaths, category,price } = req.body;
-        if(!title || !description || !imagePaths || !price){
+        const { title, description, imagePath, category, price } = req.body;
+        if(!title || !description || !imagePath || !category || !price){
             res.status(400).json('include all neccesary fields!');
         }
-        const product = new productModel({ title, description, imagePaths, category, price });
+        const product = new productModel({ title, description, imagePath, category, price });
         await product.save();
         
-        res.status(200).json({_id:product._id,title,description,image:imagePaths[0], category,price});
+        res.status(200).json({_id:product._id,title,description,image:imagePath, category,price});
 
     } catch (error) {
         console.log(error);

@@ -1,5 +1,5 @@
 const express = require('express');
-const {uploadProduct,uploadImages,getImages, getProductsByCategory} = require('../Controllers/productController');
+const {uploadProduct,uploadImages,getProductsByCategory,getImages} = require('../Controllers/productController');
 
 const router = express.Router();
 
