@@ -6,6 +6,6 @@ const router = express.Router();
 router.post('/upload',uploadProduct);
 router.post('/:productId',uploadImages);
 router.get('/:productId',getImages);
-router.get('/category/:category',getProductsByCategory);
+router.get('/category/:id',getProductsByCategory);
 
 module.exports = router;
