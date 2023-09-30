@@ -1,0 +1,31 @@
+# Ignore files and directories that are not part of the Node.js project.
+
+# Node.js modules
+node_modules/
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+logs/*
+
+# Coverage reports
+coverage/*
+
+# TypeScript cache
+.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# Stylelint cache
+.stylelintcache
+
+# Yarn cache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+
+# VSCode test environment
+.vscode-test
