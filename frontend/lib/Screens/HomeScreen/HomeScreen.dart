@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/Screens/Categories.dart';
-import '../Screens/Search.dart';
-import '../constants/constants.dart';
-// import 'package:frontend/constants/constants.dart';
+import 'package:frontend/Screens/HomeScreen/components/Categories.dart';
+import 'package:frontend/Screens/HomeScreen/components/MySearchBar.dart';
 
-class Body extends StatefulWidget {
-  const Body({super.key, required this.title});
-  final String title;
+import '../../constants/constants.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
-  State<Body> createState() => _BodyState();
+  State<HomeScreen> createState() => _HomeState();
 }
 
-class _BodyState extends State<Body> {
+class _HomeState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class _BodyState extends State<Body> {
           padding: EdgeInsets.all(16.0),
           child: Column(
             children: [
-              Search(),
+              MySearchBar(),
               Categories(),
             ],
           ),

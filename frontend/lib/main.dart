@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/Screens/home.dart';
+import 'widgets/Tabs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 61, 13)),
         useMaterial3: true,
       ),
-      home: const Home(title: 'Wonder'),
+      home: const Tabs(),
     );
   }
 }

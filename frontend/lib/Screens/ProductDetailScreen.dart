@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:frontend/Models/Category.dart';
 
 import '../constants/constants.dart';
-import '../widgets/CounterDesign.dart';
 // import 'package:frontend/Models/Product.dart';
 
 class ProductDetail extends StatefulWidget {
@@ -36,7 +35,7 @@ class _ProductDetailState extends State<ProductDetail> {
               // CarouselWithIndicatorDemo(),
               Center(
                 child: Image.asset(
-                  widget.categories.imgurl,
+                  widget.categories.imgurl, // Use a default value if categories is null
                   height: 250,
                   width: 250,
                 ),
@@ -78,9 +77,9 @@ class _ProductDetailState extends State<ProductDetail> {
                         const SizedBox(
                           height: 20.0,
                         ),
-                        CounterDesign(
-                          price: widget.categories.price,
-                        ),
+                        // CounterDesign(
+                        //   price: widget.categories.price,
+                        // ),
                         const SizedBox(
                           height: 30.0,
                         ),

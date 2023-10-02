@@ -10,3 +10,16 @@ const kDefaultPaddin = 20.0;
 const kMainColor = Color(0xFFC8D7D3);
 const kMainDarkColor = Color(0xFF003D0D);
 const kBackgroundColor = Color.fromARGB(255, 232, 232, 232);
+
+const kDefaultPadding = 20.0;
+
+// our default Shadow
+const kDefaultShadow = BoxShadow(
+  offset: Offset(0, 15),
+  blurRadius: 27,
+  color: Colors.black12, // Black color with 12% opacity
+);
+
+const kPrimaryColor = Color(0xFF035AA6);
+const kSecondaryColor = Color(0xFFFFA41B);
+const kBlueColor = Color(0xFF40BAD5);
