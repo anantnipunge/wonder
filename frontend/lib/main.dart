@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/Tabs.dart';
+import 'package:frontend/Screens/components/onboard.dart';
+// import 'widgets/Tabs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 61, 13)),
         useMaterial3: true,
       ),
-      home: const Tabs(),
+      home: OnboardScreen(),
     );
   }
 }

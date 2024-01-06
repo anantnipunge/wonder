@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/Screens/HomeScreen/components/Categories.dart';
-import 'package:frontend/Screens/HomeScreen/components/MySearchBar.dart';
+import 'package:frontend/Screens/components/Categories.dart';
+import 'package:frontend/Screens/components/MySearchBar.dart';
 
 import '../../constants/constants.dart';
 
@@ -34,6 +34,7 @@ class _HomeState extends State<HomeScreen> {
 AppBar buildAppBar() {
   return AppBar(
     backgroundColor: Colors.white,
+    automaticallyImplyLeading: false,
     title: const Text(
       'Wonder',
       style: TextStyle(
